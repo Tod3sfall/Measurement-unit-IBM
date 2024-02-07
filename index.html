@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <!-- This is your page title that appears on the browser window or tab -->
     <title> Unit Conversions</title>
   </head>
-  <body>
+  <body style="background-color:rgb(179, 245, 229)">
     <section id="home">
         <!-- This is the main heading -->
-        <header><b>Unit Conversions</b></header>
+        <header><b style= "font-family: Cursive; font-size: 70px; color:rgb(241, 237, 244)">Unit Conversions</b></header>
         <nav>
+            <div class="topdiv"></div>
             <!-- Button for redirecting users to the temperature section -->
-            <a href="#temperature"><button>Temperature</button></a>
+            <a href="#temperature"><button class="topmenu">Temperature</button></a>
             <!-- Button for redirecting users to the weight section -->
-            <a href="#weight"><button>Weight</button></a>
+            <a href="#weight"><button class="topmenu">Weight</button></a>
             <!-- Button for redirecting users to the distance section -->
-            <a href="#distance"><button>Distance</button></a>
+            <a href="#distance"><button class="topmenu">Distance</button></a>
         </nav>
     </section>
+    <div style="clear:both;"></div>
     <div id="all-conversion-sections">
         <!-- This will have the conversion sections for Temperature, Weight, and Distance -->
       
-        <section id="temperature">
+        <section id="temperature" class="b temperature">
             <div id="tmp">
                 <figure>
                     <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200px"/>
@@ -43,7 +47,8 @@
               </div>
       
         </section>
-        <section id="weight">
+        <div style="clear:both;"></div>
+        <section id="weight" class="b weight">
             <div id="wgt">
                 <figure>
                     <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px"/>
@@ -64,7 +69,8 @@
                 </aside>
             </div>
         </section>
-        <section id="distance">
+        <div style="clear:both;"></div>
+        <section id="distance" class="b distance">
             <div id="dst">
                 <figure>
                     <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="200px"/>
@@ -89,5 +95,11 @@
                 </aside>
             </div>
         </section>
+        <div style="clear:both;"></div>
+     </div>
+     <div id="go-home" class="iconbutton">
+        <a href="#home">
+            <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+        </a>
      </div>
   </body>
